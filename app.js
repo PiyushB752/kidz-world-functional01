@@ -8,7 +8,7 @@ let totalCent = 0;
 const carrt = document.getElementById('cart');
 carrt.addEventListener('click', () => {
   console.log(Messages);
-  console.log("The Total Amount is $"+`${totalDollar}`,"and",`${totalCent}`,"cents.")
+  console.log("The Total Amount is $"+`${totalDollar + Math.floor(totalCent / 100)}`,"and",`${totalCent%100}`,"cents.")
 });
 
 const Button1 = document.getElementById('book1');
